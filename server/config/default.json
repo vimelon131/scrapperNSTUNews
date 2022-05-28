@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "mongoURI": "mongodb://localhost:27017/nstuDB",
+    "siteURL": "https://www.nstu.ru/",
+    "specsURL": "https://www.nstu.ru/entrance/entrance_all/magistracy"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "scrappernstunews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.3",
+    "chalk": "^5.0.0",
+    "cherio": "^1.0.0-rc.2",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "iconv-lite": "^0.6.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.4",
+    "needle": "^3.0.0",
+    "puppeteer": "^13.7.0"
+  },
+  "devDependencies": {}
+}
