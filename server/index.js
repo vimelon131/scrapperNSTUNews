@@ -90,4 +90,3 @@ async function getSpec() {
     
 }
 
-getNews();

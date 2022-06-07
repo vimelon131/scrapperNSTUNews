@@ -42,7 +42,6 @@ async function getSpec(specName) {
                                                                                         return this.type === "text";
                                                                                     });
      
-    // console.log(textNodes.text());
     textNodes.each((i, el) => {
         if (el.data.trim().match(/\w/)){
             if (el.data.toLowerCase().includes('бюджетных')){
@@ -60,13 +59,11 @@ async function getSpec(specName) {
             if (el.data.toLowerCase().includes('на контракт')){
                 specInfo.passingScore.contract = el.data.match(/\d+,\d+/g)[0];
             }
-            // console.log(el.data + ' ' + i);
         }
         if (!el.data.trim().match(/\s/)){
             if (el.data.trim().match(/\D+/)){
                 specInfo["exams"].push(el.data.trim());
             }
-            // console.log(el.data + ' ' + i);
         }
     });
     $('#more_disc > ul > li').each((i,el) => {
@@ -121,6 +118,10 @@ async function getSpec(specName) {
     }                                                 
     await browser.close();
     console.log("Закрыто");
+}
+
+async function syncAllSpecs() {
+    
 }
 
 await getSpec();

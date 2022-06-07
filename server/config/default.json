@@ -1,6 +1,8 @@
 {
     "port": 5000,
     "mongoURI": "mongodb://localhost:27017/nstuDB",
-    "siteURL": "https://www.nstu.ru/",
-    "specsURL": "https://www.nstu.ru/entrance/entrance_all/magistracy"
+    "siteURL": "https://www.nstu.ru",
+    "specsURL": "https://ciu.nstu.ru/kaf/asu/study_activity/specs/",
+    "newsURL": "https://www.nstu.ru/news?page=",
+    "adsURL": "https://www.nstu.ru/announcements?page="
 }

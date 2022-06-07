@@ -1,12 +1,13 @@
 import cherio from 'cherio';
 import chalk from 'chalk';
-import { taskQueue } from '../index.js';
+import { taskQueue } from '../services/newsService.js';
 import needle from 'needle';
 import { News } from '../models/News.js';
 import {fromStringToData} from '../helpers/dataConverter.js';
 import contentChecker from '../helpers/contentChecker.js';
+import config from 'config';
 
-const SITE = 'https://www.nstu.ru/';
+const SITE = config.get('siteURL');;
 
 async function listPageHandler(url) {
     try {
